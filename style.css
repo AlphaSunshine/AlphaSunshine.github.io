@@ -44,3 +44,12 @@ body {
     color: #ffffff;
     font-family: PT Sans;
 }
+
+.linkTitoli {
+  display: inline-block;
+}
+
+.linkTitoli:hover {
+   transform: scale(1.1);
+
+}

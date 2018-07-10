@@ -105,7 +105,7 @@ e del seguente apparato:</p>
 margin: 0 auto;"></iframe>
             <p style="color: #ffffff;">Il movimento delle gambe è leggermente ritardato rispetto a quello delle braccia per evitare l’effetto meccanico del video precedente.<br>
 Le altre animazioni, le quali richiedevano meno atleticità sono state studiate allo specchio.<br><br><br><span style="font-size: 16pt;
-    font-weight: bold;">ROBOT</span><br><br>Il rig del robot è alquanto semplice, essendo che il modello compie movimenti “meccanici” e quindi non necessita di un weight paint particolare. 
+    font-weight: bold;">ROBOT</span><br><br>Il rig del robot è alquanto semplice, essendo che il modello compie movimenti “meccanici” e quindi non necessita di un weight paint particolare.
 L’armatura si può dividere in tre sezioni principali (gambe, corpo e arma), tutte imparentate ad un bone di “root” usato per spostarlo nelle scene.<br>
 La primissima sezione dell’armatura sono le gambe, ognuna composta da cinque bone collegate sequenzialmente l’una all’altra. Un bone “IK target” vicino all’ultimo bone della gamba permette tramite cinematica inversa di controllare tutte e cinque le bone dell’arto. Inoltre sono presenti due bone “target” che permettono di controllarne l’orientamento (anche se ne è stato usato solo uno).<br>
 La sezione del corpo, invece, presenta solo due bone: uno per controllare tutto il corpo del robot (al quale sono imparentate “a distanza” l’osso iniziale delle quattro gambe) e uno con funzione “Damped Track” che permette di rivolgere il “muso” del robot nella sua direzione.<br>
@@ -121,12 +121,12 @@ Infine il terzo sottoinsieme dell’armatura è quello dell’arma composto da q
             </video>
             <img src="res_4/GraphEditor_flickeringRobot.PNG" style="width: 100%;">
             <p style="color: #ffffff;">Le curve dei tre parametri hanno un lieve sfasamento tra di loro per migliorare la credibilità del lampeggiamento.<br><br><br><span style="font-size: 16pt;
-    font-weight: bold;">WALKING CYCLE ROBOT</span><br><br>Una delle animazioni che vengono inquadrate di più del robot è la camminata in avanti, per questo abbiamo deciso di comporre un walk-cylce e di usare quello per tutte le scene che lo richiedessero. 
-Essendo il robot quadrupede, ci siamo concentrati nei primissimi tempi di animazione nella ricerca di reference per la sua camminata. 
+    font-weight: bold;">WALKING CYCLE ROBOT</span><br><br>Una delle animazioni che vengono inquadrate di più del robot è la camminata in avanti, per questo abbiamo deciso di comporre un walk-cylce e di usare quello per tutte le scene che lo richiedessero.
+Essendo il robot quadrupede, ci siamo concentrati nei primissimi tempi di animazione nella ricerca di reference per la sua camminata.
 Originariamente la nostra ricerca si è rivolta ai Dragoons, un'unità militare del gioco StarCraft.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/mAcOQUvctCM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="display: block;
 margin: 0 auto;"></iframe>
-            <p style="color: #ffffff;">Questa reference però è stata scartata quasi subito per via del diverso orientamento delle giunture delle gambe rispetto a quello del nostro robot. 
+            <p style="color: #ffffff;">Questa reference però è stata scartata quasi subito per via del diverso orientamento delle giunture delle gambe rispetto a quello del nostro robot.
 Ci siamo così concentrati sul camminatore AT-AT della saga di Star Wars. </p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/GUsOouwjsL4?start=22s&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="display: block;
 margin: 0 auto;"></iframe>
@@ -202,7 +202,7 @@ CARICAMENTO DELL’ARMA</span><br><br>L’effetto particellare del caricamento d
     font-weight: bold;">Particelle verdi - </span>Primo stadio del caricamento dell’arma. Questo effetto particellare ha come base delle particelle icosaedriche il cui movimento è solo lievemente influenzato dai vortex. Si è inoltre deciso di dare una lieve randomizzazione all’emitter così come alla dimensione delle particelle.<br><br><span style="font-size: 11pt;
     font-weight: bold;">Particelle rosse - </span>Secondo stadio del caricamento dell’arma. La forma di queste particelle è cubica, ed è funzionale alla dimensione con cui vengono visualizzate. Infatti essendo di piccole dimensioni non c’è stata necessità di utilizzare geometrie complesse che avrebbero aumentato i tempi di render. Questo effetto particellare è influenzato solamente dai due vortex e dal force field animato, il quale effetto combinato fa ruotare queste particelle in un anello che avanza fino al culmine del wireframe icosaedrico in rotazione.<br><br><br><span style="font-size: 16pt;
     font-weight: bold;">IL FUMO</span><br><br>
-Il fumo in lontananza nella prima scena è alquanto semplice, essendo che doveva essere un elemento di sfondo e non rappresentare la parte principale della scena. 
+Il fumo in lontananza nella prima scena è alquanto semplice, essendo che doveva essere un elemento di sfondo e non rappresentare la parte principale della scena.
 Il “sistema” è composto dal dominio, un emitter (un icosaedro a metà) e un wind generator con limitazioni sull’area di influenza, che permette così al fumo di essere spinto dal vento solo quando raggiunge una certa altezza. </p>
             <video preload="auto" autoplay="autoplay" loop="loop" muted style="display: block;
     margin: 0 auto;
@@ -253,7 +253,7 @@ lo shader è uguale a quello del fumo, ma con una densità del volume absorption
     width: 80%;
     font-size: 11pt;">Purtroppo si è dovuto rimuovere questo effetto a causa dei tempi di render che diventavano troppo lunghi quando veniva aggiunto questo effetto. Inoltre non si mischiava bene con lo stile e i toni cell shading del corto.<br><br><br><span style="font-size: 16pt;
     font-weight: bold;">LE SCINTILLE</span><br><br>
-L’effetto particellare delle scintille usato per simboleggiare i malfunzionamenti del robot è stato creato con il motore di particelle di blender. 
+L’effetto particellare delle scintille usato per simboleggiare i malfunzionamenti del robot è stato creato con il motore di particelle di blender.
 Per dare l’idea di scintille si è optato per un numero basso di particelle con una vita corta e un alto valore di casualità della durata della vita. </p>
             <img src="res_4/scintilleTOT.png" style="display: block;
     margin: 0 auto;
@@ -327,7 +327,7 @@ I camera shake ottenuti con un noise modifier hanno contribuito a donare senso d
     text-transform: uppercase;
     margin: 1em 25% 2em;
     text-align: center;">
-                <a href="index.html">Torna alla homepage</a>
+                <a href="index.html" style="text-decoration: underline;" class="linkTitoli">Torna alla homepage</a>
             </div>
             <div id="testoFooter" style="text-align: center;
     font-size: 12px;
@@ -336,7 +336,7 @@ I camera shake ottenuti con un noise modifier hanno contribuito a donare senso d
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    padding-top: 2em;">Prof. Miglio Edie e Mattia Penati    
+    padding-top: 2em;">Prof. Miglio Edie e Mattia Penati
                 <br>Corso di storia dell’arte contemporanea, A.A. 2017/2018
                 <br>Design della Comunicazione, Politecnico di Milano.&nbsp;
             </div>
