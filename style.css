@@ -47,9 +47,21 @@ body {
 
 .linkTitoli {
   display: inline-block;
+  text-decoration: none;
 }
 
 .linkTitoli:hover {
-   transform: scale(1.1);
+   /* transform: scale(1.1); */
+   text-decoration: none;
+   opacity: 0.7;
+   transition-duration: 200ms;
+}
 
+.pg-empty-placeholder {
+  transition-duration: 300ms;
+}
+
+.pg-empty-placeholder:hover {
+  opacity:0.7;
+  transition-duration: 300ms;
 }
